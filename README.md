@@ -25,6 +25,7 @@
 ./etc/          Other stuff, e.g., pictures of writeboards, notes
 
 
-Acknowledgement: The above format was taken from David Blei as described here:
-cs.columbia.edu/~blei/seminar/2016_discrete_data/notes/week_01.pdf and Dustin 
-Tran as described here: http://dustintran.com/blog/a-research-to-engineering-workflow
+Acknowledgement:
+The above format was taken from David Blei and Dustin Tran
+www.cs.columbia.edu/~blei/seminar/2016_discrete_data/notes/week_01.pdf
+www.dustintran.com/blog/a-research-to-engineering-workflow
