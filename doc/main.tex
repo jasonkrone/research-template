@@ -5,20 +5,20 @@
 \input{preamble/preamble_tikz}
 
 \title{%
-\textbf{Validating Causal Models}
+\textbf{Paper Title}
 }
 
 \author{
-Dustin Tran \\
+Jason Krone \\
 Columbia University \\
 \\
-Francisco J.~R.~Ruiz \\
+Co-author1 \\
 Columbia University \\
 \\
-Susan Athey \\
-Stanford University \\
+Co-author 2 \\
+Columbia University \\
 \\
-David M.~Blei \\
+Principal Investigator \\
 Columbia University \\
 }
 
@@ -27,21 +27,7 @@ Columbia University \\
 \maketitle
 \bigskip
 
-\begin{abstract}
-  The goal of causal inference is to understand the outcome of
-  alternative courses of action.  However, all causal inference
-  requires assumptions---more so than for standard tasks in
-  probabilistic modeling---and testing those assumptions is important
-  to assess the validity of a causal model. We develop Bayesian model
-  criticism for causal inference, building on the idea of posterior
-  predictive checks to assess model fit. Our approach involves
-  decomposing the problem, separately criticizing the model of
-  treatment assignments and the model of outcomes.  Further we
-  discuss how and when we can check the central assumption of
-  unconfoundedness, which enables causal statements from observational
-  data.  Our approach provides a foundation for diagnosing causal
-  inferences from observational data.
-\end{abstract}
+\input{abstract}
 
 \emph{Keywords:}
 Causal Inference;
@@ -52,9 +38,23 @@ Model Checking.
 \clearpage
 \glsresetall{}
 
-%\input{sec_intro}
+\input{introduction}
 
-%\clearpage
+\clearpage
+
+\input{relatedwork}
+
+\clearpage
+
+\input{approach}
+
+\clearpage
+
+\input{experiments}
+
+\clearpage
+
+\input{conclusions}
 
 \bibliographystyle{apalike}
 \bibliography{bib}
