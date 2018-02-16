@@ -1,67 +1,90 @@
-\documentclass[12pt]{article}
-\input{preamble/preamble}
-\input{preamble/preamble_acronyms}
-\input{preamble/preamble_math}
-\input{preamble/preamble_tikz}
+\documentclass{article}
 
-\title{%
-\textbf{Paper Title}
+% if you need to pass options to natbib, use, e.g.:
+% \PassOptionsToPackage{numbers, compress}{natbib}
+% before loading nips_2017
+%
+% to avoid loading the natbib package, add option nonatbib:
+% \usepackage[nonatbib]{nips_2017}
+
+
+\usepackage[final]{nips_2017}
+% to compile a camera-ready version, add the [final] option, e.g.:
+% \usepackage[final]{nips_2017}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{float}
+
+
+\usepackage[
+backend=bibtex,
+sorting=none,
+]{biblatex}
+\addbibresource{bib.bib}
+
+%\usepackage{algorithm, algorithmic}%
+\usepackage{tabularx,dcolumn,booktabs,caption,ragged2e,geometry}
+\newcolumntype{d}[1]{D..{#1}} % for aligning numerical data on decimal marker
+\newcommand\mX[1]{\multicolumn{1}{X}{#1}} % handy shortcut macro
+\newcolumntype{C}{>{\Centering\arraybackslash}X}
+\newcommand\mC[1]{\multicolumn{1}{C}{\textbf{#1}}} % another handy shortcut macro
+\raggedbottom
+\setlength\floatsep{1.25\baselineskip  minus 3pt}
+\setlength\textfloatsep{1.25\baselineskip  minus 3pt}
+\setlength\intextsep{1.25\baselineskip  minus 3pt}
+\usepackage{algorithmicx}
+\usepackage[Algorithm,ruled]{algorithm}
+\lstset { %
+    language=python,
+    backgroundcolor=\color{black!5}, % set backgroundcolor
+    basicstyle=\footnotesize,% basic font setting
 }
+%\input{preamble/preamble_math}
+
+
+\title{Title}
 
 \author{
+Author Name \\
+Department of Computer Science\\
+Columbia University \\
+\texttt{name@columbia.edu} \\
+\And
 Jason Krone \\
+Department of Computer Science\\
 Columbia University \\
-\\
-Co-author1 \\
-Columbia University \\
-\\
-Co-author 2 \\
-Columbia University \\
-\\
-Principal Investigator \\
-Columbia University \\
+\texttt{jpk2151@columbia.edu} \\
 }
 
 \begin{document}
 
 \maketitle
-\bigskip
-
 \input{abstract}
-
-\emph{Keywords:}
-Causal Inference;
-Probabilistic Models;
-Bayesian Analysis;
-Model Checking.
-
-\clearpage
-\glsresetall{}
 
 \input{introduction}
 
-\clearpage
-
 \input{relatedwork}
-
-\clearpage
 
 \input{approach}
 
-\clearpage
-
 \input{experiments}
-
-\clearpage
 
 \input{conclusions}
 
-\bibliographystyle{apalike}
-\bibliography{bib}
-
 \clearpage
-\appendix
 
-%\input{sec_appendix}
+\nocite{*}
+\printbibliography
 
 \end{document}

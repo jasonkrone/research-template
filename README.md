@@ -15,11 +15,10 @@
 ##############################################################################
 
 ./doc/          Documents, e.g., paper sections
-./src/          Code
-    ./src/checkpoints/       saved model parameters
-    ./src/codebase/          classes and utilities
-    ./src/log/               logs for visualizing learning
-    ./src/out/               exploratory output after training finishes
+./checkpoints/  saved model parameters
+./src/          classes and utilities
+./log/          logs for visualizing learning
+./out/          exploratory output after training finishes
 ./dat/          Data (if not too large)
 ./ref/          Reference materials, e.g., PDFs of papers
 ./etc/          Other stuff, e.g., pictures of writeboards, notes
